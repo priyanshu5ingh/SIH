@@ -14,7 +14,265 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blockchain_transactions: {
+        Row: {
+          block_number: number
+          data: Json
+          event_id: string | null
+          gas_used: number | null
+          id: string
+          product_id: string | null
+          timestamp: string
+          transaction_hash: string
+          transaction_type: string
+          verification_status:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Insert: {
+          block_number: number
+          data: Json
+          event_id?: string | null
+          gas_used?: number | null
+          id?: string
+          product_id?: string | null
+          timestamp?: string
+          transaction_hash: string
+          transaction_type: string
+          verification_status?:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Update: {
+          block_number?: number
+          data?: Json
+          event_id?: string | null
+          gas_used?: number | null
+          id?: string
+          product_id?: string | null
+          timestamp?: string
+          transaction_hash?: string
+          transaction_type?: string
+          verification_status?:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "blockchain_transactions_event_id_fkey"
+            columns: ["event_id"]
+            isOneToOne: false
+            referencedRelation: "supply_chain_events"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "blockchain_transactions_product_id_fkey"
+            columns: ["product_id"]
+            isOneToOne: false
+            referencedRelation: "products"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      products: {
+        Row: {
+          blockchain_hash: string | null
+          category: Database["public"]["Enums"]["product_category"]
+          certifications: string[] | null
+          created_at: string
+          created_by: string | null
+          cultivation_method: string | null
+          description: string | null
+          id: string
+          name: string
+          origin_location: string | null
+          product_id: string
+          qr_code_data: string | null
+          updated_at: string
+        }
+        Insert: {
+          blockchain_hash?: string | null
+          category: Database["public"]["Enums"]["product_category"]
+          certifications?: string[] | null
+          created_at?: string
+          created_by?: string | null
+          cultivation_method?: string | null
+          description?: string | null
+          id?: string
+          name: string
+          origin_location?: string | null
+          product_id: string
+          qr_code_data?: string | null
+          updated_at?: string
+        }
+        Update: {
+          blockchain_hash?: string | null
+          category?: Database["public"]["Enums"]["product_category"]
+          certifications?: string[] | null
+          created_at?: string
+          created_by?: string | null
+          cultivation_method?: string | null
+          description?: string | null
+          id?: string
+          name?: string
+          origin_location?: string | null
+          product_id?: string
+          qr_code_data?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "products_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          address: string | null
+          company_name: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          phone: string | null
+          role: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          address?: string | null
+          company_name?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          address?: string | null
+          company_name?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          role?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      qr_scans: {
+        Row: {
+          id: string
+          location: string | null
+          product_id: string
+          scanned_at: string
+          scanner_ip: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          id?: string
+          location?: string | null
+          product_id: string
+          scanned_at?: string
+          scanner_ip?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          id?: string
+          location?: string | null
+          product_id?: string
+          scanned_at?: string
+          scanner_ip?: string | null
+          user_agent?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "qr_scans_product_id_fkey"
+            columns: ["product_id"]
+            isOneToOne: false
+            referencedRelation: "products"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      supply_chain_events: {
+        Row: {
+          actor_id: string | null
+          actor_name: string
+          blockchain_hash: string | null
+          created_at: string
+          humidity: number | null
+          id: string
+          images: string[] | null
+          location: string
+          notes: string | null
+          product_id: string
+          stage: Database["public"]["Enums"]["supply_chain_stage"]
+          temperature: number | null
+          timestamp: string
+          verification_status:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Insert: {
+          actor_id?: string | null
+          actor_name: string
+          blockchain_hash?: string | null
+          created_at?: string
+          humidity?: number | null
+          id?: string
+          images?: string[] | null
+          location: string
+          notes?: string | null
+          product_id: string
+          stage: Database["public"]["Enums"]["supply_chain_stage"]
+          temperature?: number | null
+          timestamp?: string
+          verification_status?:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Update: {
+          actor_id?: string | null
+          actor_name?: string
+          blockchain_hash?: string | null
+          created_at?: string
+          humidity?: number | null
+          id?: string
+          images?: string[] | null
+          location?: string
+          notes?: string | null
+          product_id?: string
+          stage?: Database["public"]["Enums"]["supply_chain_stage"]
+          temperature?: number | null
+          timestamp?: string
+          verification_status?:
+            | Database["public"]["Enums"]["transaction_status"]
+            | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "supply_chain_events_actor_id_fkey"
+            columns: ["actor_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+          {
+            foreignKeyName: "supply_chain_events_product_id_fkey"
+            columns: ["product_id"]
+            isOneToOne: false
+            referencedRelation: "products"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +281,21 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      product_category:
+        | "herb"
+        | "powder"
+        | "oil"
+        | "capsule"
+        | "tablet"
+        | "tincture"
+      supply_chain_stage:
+        | "cultivation"
+        | "harvesting"
+        | "processing"
+        | "packaging"
+        | "distribution"
+        | "retail"
+      transaction_status: "pending" | "verified" | "completed"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +422,24 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      product_category: [
+        "herb",
+        "powder",
+        "oil",
+        "capsule",
+        "tablet",
+        "tincture",
+      ],
+      supply_chain_stage: [
+        "cultivation",
+        "harvesting",
+        "processing",
+        "packaging",
+        "distribution",
+        "retail",
+      ],
+      transaction_status: ["pending", "verified", "completed"],
+    },
   },
 } as const
