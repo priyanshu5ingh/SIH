@@ -1,5 +1,6 @@
 import { Shield, Leaf, Users, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,25 +11,27 @@ const Hero = () => {
         <div className="absolute top-40 right-32 w-24 h-24 rounded-full bg-white/15 animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-32 left-1/3 w-20 h-20 rounded-full bg-white/10 animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
-
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Blockchain-Powered
             <span className="block text-gold">Ayurvedic Traceability</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            From farm to formulation, track every Ayurvedic herb with immutable transparency. 
+            From farm to formulation, track every Ayurvedic herb with immutable transparency.
             Ensuring authenticity, sustainability, and consumer trust through blockchain technology.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button className="btn-hero">
-              Start Tracking
+            <Button asChild className="btn-hero">
+              <Link to="/auth">Start Tracking</Link>
             </Button>
-            <Button variant="outline" className="btn-outline-hero">
-              Learn More
+            <Button asChild variant="outline" className="btn-outline-hero">
+              <Link to="/trace">Learn More</Link>
+            </Button>
+            <Button asChild variant="secondary" className="btn-outline-hero">
+              <Link to="/demo">View Demo</Link>
             </Button>
           </div>
 
