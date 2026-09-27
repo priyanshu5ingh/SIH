@@ -1,0 +1,100 @@
+.property-explorer {
+  background: #1e1e2f;
+  color: white;
+  padding: 1.5rem;
+  height: calc(100vh - 60px - 100px); /* Account for top bar and bottom timeline */
+  overflow-y: auto;
+}
+
+.explorer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.explorer-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #2a2a40;
+  color: white;
+  width: 200px;
+}
+
+.search-input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.parcel-list, .building-list, .floor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parcel-list li, .building-list li, .floor-list li {
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parcel-list li:hover, .building-list li:hover, .floor-list li:hover {
+  background: #2a2a40;
+}
+
+.parcel-list li.active, .building-list li.active, .floor-list li.active {
+  background: #4cc9f0;
+  color: #1e1e2f;
+}
+
+.parcel-info, .building-info, .floor-info {
+  flex: 1;
+}
+
+.ulpin {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.name {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.area {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.floors {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.details {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}

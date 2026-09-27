@@ -1,0 +1,91 @@
+"""
+Mock FastAPI module for demonstration purposes.
+"""
+from io import BytesIO
+
+class UploadFile:
+    def __init__(self, filename: str = "", file=None):
+        self.filename = filename
+        self.file = file or BytesIO(b"")
+
+    async def read(self):
+        return self.file.read()
+
+class File:
+    def __init__(self, *args, **kwargs):
+        pass
+
+class FastAPI:
+    def __init__(self, *args, **kwargs):
+        # Store common FastAPI attributes for compatibility
+        self.title = kwargs.get('title', '')
+        self.description = kwargs.get('description', '')
+        self.version = kwargs.get('version', '')
+        self.openapi_url = kwargs.get('openapi_url', '')
+        self.docs_url = kwargs.get('docs_url', '/docs')
+        self.redoc_url = kwargs.get('redoc_url', '/redoc')
+        self.routes = []  # List to store routes
+
+    def include_router(self, router, *args, **kwargs):
+        pass
+    def get(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def post(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def put(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def delete(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def add_middleware(self, middleware_class, *args, **kwargs):
+        """Mock add_middleware method."""
+        pass
+
+class APIRouter:
+    def __init__(self, *args, **kwargs):
+        pass
+    def include_router(self, router, *args, **kwargs):
+        pass
+    def get(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def post(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def put(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+    def delete(self, *args, **kwargs):
+        def decorator(func):
+            return func
+        return decorator
+
+class Depends:
+    def __init__(self, dependency):
+        self.dependency = dependency
+
+class HTTPException(Exception):
+    def __init__(self, status_code, detail=None):
+        self.status_code = status_code
+        self.detail = detail
+
+class status:
+    HTTP_200_OK = 200
+    HTTP_201_CREATED = 201
+    HTTP_204_NO_CONTENT = 204
+    HTTP_400_BAD_REQUEST = 400
+    HTTP_404_NOT_FOUND = 404
+    HTTP_422_UNPROCESSABLE_ENTITY = 422
+
+# For compatibility
+__all__ = ['FastAPI', 'APIRouter', 'Depends', 'HTTPException', 'status', 'UploadFile', 'File']

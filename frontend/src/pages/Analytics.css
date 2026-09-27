@@ -1,0 +1,355 @@
+.analytics-page {
+  padding: 0;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    #f8f9fa 0%,
+    #ffffff 100%
+  );
+}
+
+/* Analytics Header */
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.analytics-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(106, 17, 203, 0.3),
+    transparent
+  );
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    #6a11cb 0%,
+    #2575fc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-content .subtitle {
+  margin: 0;
+  color: #5f6368;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(248, 249, 250, 0.8);
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(106, 17, 203, 0.2);
+  border-top-color: #6a11cb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  padding: 3rem;
+}
+
+.error-message h2 {
+  margin-bottom: 1rem;
+  color: #e74c3c;
+}
+
+.error-message p {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Analytics Container */
+.analytics-container {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.metric-card h3 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(
+    135deg,
+    #6a11cb 0%,
+    #2575fc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.metric-card p {
+  margin: 0 0 0.5rem 0;
+  color: #5f6368;
+  font-weight: 600;
+}
+
+.metric-trend {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.metric-trend.positive {
+  background: rgba(40, 167, 69, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.metric-trend.negative {
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+}
+
+/* Charts Section */
+.charts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-panel {
+  /* Height will be determined by content */
+}
+
+.chart-placeholder {
+  aspect-ratio: 16 / 9;
+  background: rgba(248, 249, 250, 0.5);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chart-info {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.chart-info p {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.chart-label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(106, 17, 203, 0.1);
+  border: 1px solid rgba(106, 17, 203, 0.2);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #6a11cb;
+  font-weight: 500;
+}
+
+/* Tables Section */
+.tables-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.table-panel {
+  /* Height determined by content */
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.data-table th {
+  background: rgba(106, 17, 203, 0.1);
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.data-table tr:hover {
+  background-color: rgba(106, 17, 203, 0.05);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.status-verified {
+  background: rgba(40, 167, 69, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.status-badge.status-updated {
+  background: rgba(0, 123, 255, 0.1);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  color: #007bff;
+}
+
+.status-badge.status-processed {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.status-badge.status-completed {
+  background: rgba(25, 135, 84, 0.1);
+  border: 1px solid rgba(25, 135, 84, 0.2);
+  color: #198754;
+}
+
+.status-badge.status-good {
+  background: rgba(40, 167, 69, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.status-badge.status-excellent {
+  background: rgba(25, 135, 84, 0.1);
+  border: 1px solid rgba(25, 135, 84, 0.2);
+  color: #198754;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .analytics-header {
+    padding: 1rem;
+  }
+
+  .header-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .header-content .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .header-actions {
+    flex-wrap: wrap;
+  }
+
+  .analytics-container {
+    padding: 1rem;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .metric-card h3 {
+    font-size: 2rem;
+  }
+
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tables-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .analytics-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}

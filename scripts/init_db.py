@@ -1,0 +1,83 @@
+"""
+Database initialization script with seed data for demo.
+"""
+# Use mock sqlalchemy
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'backend'))
+
+from sqlalchemy.orm import Session
+from app.core.database import engine, SessionLocal
+from app.models import ulpin
+
+# Create tables
+def init_db():
+    # Create tables
+    ulpin.Base.metadata.create_all(bind=engine)
+    print("Database tables created successfully!")
+
+    # Seed data
+    db = SessionLocal()
+    try:
+        # Check if we already have data
+        if db.query(ulpin.Parcel).count() == 0:
+            # Create sample parcels
+            parcel1 = ulpin.Parcel(
+                ulpin="ULPIN12345678901234",
+                parcel_name="Sample Parcel Alpha",
+                description="A sample parcel for demonstration purposes.",
+                area_sqm=1500.5,
+                boundary_wkt="POLYGON((0 0, 0 50, 50 50, 50 0, 0 0))",
+                centroid_lat=25.0,
+                centroid_lng=77.0,
+                elevation_min=100.0,
+                elevation_max=150.0,
+                is_active=True
+            )
+            parcel2 = ulpin.Parcel(
+                ulpin="ULPIN98765432109876",
+                parcel_name="Sample Parcel Beta",
+                description="Another sample parcel with different characteristics.",
+                area_sqm=2300.0,
+                boundary_wkt="POLYGON((10 10, 10 60, 60 60, 10 10))",
+                centroid_lat=25.5,
+                centroid_lng=77.5,
+                elevation_min=120.0,
+                elevation_max=200.0,
+                is_active=True
+            )
+            db.add_all([parcel1, parcel2])
+            db.commit()
+            print("Sample parcels created.")
+
+            # Create sample data sources
+            ds1 = ulpin.DataSource(
+                name="Drone Survey - Region A",
+                source_type="drone",
+                description="High-resolution drone imagery survey of Region A.",
+                file_path="/data/drone_survey_region_a.tif",
+                metadata='{"resolution": "5cm", "date": "2024-05-15", "format": "GeoTIFF"}',
+                is_processed=True
+            )
+            ds2 = ulpin.DataSource(
+                name="LiDAR Scan - District B",
+                source_type="lidar",
+                description="Airborne LiDAR scanning of District B.",
+                file_path="/data/lidar_district_b.las",
+                metadata='{"point_density": "10 points/m2", "date": "2024-06-01", "format": "LAS"}',
+                is_processed=False
+            )
+            db.add_all([ds1, ds2])
+            db.commit()
+            print("Sample data sources created.")
+        else:
+            print("Data already exists, skipping seed data insertion.")
+    except Exception as e:
+        print(f"Error seeding data: {e}")
+        db.rollback()
+    finally:
+        db.close()
+
+
+if __name__ == "__main__":
+    init_db()

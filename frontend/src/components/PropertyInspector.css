@@ -1,0 +1,234 @@
+.property-inspector {
+  background: #1e1e2f;
+  color: white;
+  padding: 1.5rem;
+  height: calc(100vh - 60px - 100px); /* Account for top bar and bottom timeline */
+  overflow-y: auto;
+}
+
+.inspector-header {
+  margin-bottom: 1.5rem;
+}
+
+.inspector-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.inspector-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-section h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item .label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 0.25rem;
+}
+
+.info-item .value {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-pending {
+  color: #ffb400;
+}
+
+.accordion {
+  border-top: 1px solid #2a2a40;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #2a2a40;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  cursor: pointer;
+  background: #2a2a40;
+  transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+  background: #33334d;
+}
+
+.accordion-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.accordion-icon {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #2a2a40;
+}
+
+.accordion-content.open {
+  max-height: 300px; /* Adjust based on content */
+}
+
+.evidence-matrix, .validation-list {
+  padding: 1rem;
+}
+
+.evidence-header, .validation-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+.evidence-row, .validation-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.evidence-row div, .validation-item div {
+  font-size: 0.85rem;
+}
+
+.confidence {
+  font-weight: 600;
+}
+
+.validation-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.validation-item.status-pass {
+  background: rgba(76, 201, 87, 0.2);
+  border-left: 3px solid #4cc957;
+}
+
+.validation-item.status-warning {
+  background: rgba(255, 180, 0, 0.2);
+  border-left: 3px solid #ffb400;
+}
+
+.validation-item.status-fail {
+  background: rgba(255, 107, 107, 0.2);
+  border-left: 3px solid #ff6b6b;
+}
+
+.validation-check {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.validation-status {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.validation-message {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.review-section {
+  border-top: 1px solid #2a2a40;
+  padding-top: 1.5rem;
+}
+
+.review-question {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.review-hint {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.review-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn.approve {
+  background: #4cc957;
+  color: white;
+}
+
+.btn.approve:hover {
+  background: #43a047;
+}
+
+.btn.edit {
+  background: #ffb400;
+  color: #1e1e2f;
+}
+
+.btn.edit:hover {
+  background: #ffa000;
+}
+
+.btn.reject {
+  background: #ff6b6b;
+  color: white;
+}
+
+.btn.reject:hover {
+  background: #ff5252;
+}

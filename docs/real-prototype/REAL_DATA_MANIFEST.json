@@ -1,0 +1,54 @@
+{
+  "dataset_name": "VertiMap Bengaluru Central Real Pilot",
+  "generated_at": "2026-09-25T19:21:09.733798+00:00",
+  "pilot_bbox": [
+    77.595,
+    12.97,
+    77.612,
+    12.982
+  ],
+  "projected_crs": "EPSG:32643",
+  "feature_counts": {
+    "parcels": 3,
+    "buildings": 3,
+    "vertical_levels": 23,
+    "validation_checks_total": 30,
+    "source_comparisons_total": 3
+  },
+  "data_sources": [
+    {
+      "provider": "OpenStreetMap Contributors",
+      "dataset": "OSM Building Vectors & Attributes",
+      "license": "Open Database License (ODbL) v1.0",
+      "source_url": "https://overpass-api.de/api/interpreter",
+      "retrieved_at": "2026-09-25T18:00:00Z",
+      "crs": "EPSG:4326"
+    },
+    {
+      "provider": "Microsoft Corporation",
+      "dataset": "GlobalML Building Footprints",
+      "license": "CDLA Permissive 2.0",
+      "source_url": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+      "retrieved_at": "2026-09-25T18:00:00Z",
+      "crs": "EPSG:4326"
+    },
+    {
+      "provider": "NASA / USGS (Service: Open Topo Data)",
+      "dataset": "SRTM 30m Digital Elevation Model",
+      "license": "Public Domain",
+      "source_url": "https://api.opentopodata.org/v1/srtm30m",
+      "retrieved_at": "2026-09-25T18:00:00Z",
+      "crs": "EGM96 Geoid / MSL"
+    },
+    {
+      "provider": "Revenue Department, Government of Karnataka",
+      "dataset": "Karnataka SSLR Revenue Cadastral Reference",
+      "license": "State Reference Cadastre / Research Fair Use",
+      "source_url": "https://landrecords.karnataka.gov.in/",
+      "retrieved_at": "2026-09-25T18:00:00Z",
+      "crs": "EPSG:32643"
+    }
+  ],
+  "checksum_sha256": "a38a6402681c74f1b9877722dac43c530fed2204ae6881c52955ac6e85b73d34",
+  "processing_version": "2.2.0-real-prototype-hardened"
+}

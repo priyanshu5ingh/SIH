@@ -1,0 +1,303 @@
+import React, { useState, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
+import axios from 'axios';
+import './MapView.css';
+
+// Helper to convert lat/long to 3D coordinates on a sphere
+const latLongToVector3 = (lat, lng, radius) => {
+  const phi = ((90 - lat) * Math.PI) / 180;
+  const theta = ((lng + 180) * Math.PI) / 180;
+  const x = radius * Math.sin(phi) * Math.cos(theta);
+  const y = radius * Math.cos(phi);
+  const z = radius * Math.sin(phi) * Math.sin(theta);
+  return { x, y, z };
+};
+
+const Globe = ({ radius, parcels }) => {
+  // Globe mesh
+  return (
+    <>
+      <mesh>
+        <sphereGeometry args={[radius, 64, 64]} />
+        <meshStandardMaterial color="#002b5c" />
+      </mesh>
+      {/* Markers for parcels */}
+      {parcels.map((p) => {
+        if (p.centroid_lat !== null && p.centroid_lng !== null) {
+          const pos = latLongToVector3(p.centroid_lat, p.centroid_lng, radius + 0.1);
+          return (
+            <mesh key={p.id} position={[pos.x, pos.y, pos.z]}>
+              <coneGeometry args={[0.2, 0.4, 8]} />
+              <meshStandardMaterial color="#ff9a9e" />
+            </mesh>
+          );
+        }
+        return null;
+      })}
+      {/* Ambient light */}
+      <ambientLight intensity={0.5} />
+      {/* Directional light */}
+      <directionalLight position={[5, 5, 5]} intensity={1} />
+    </>
+  );
+};
+
+const MapView = () => {
+  const [mapInitialized, setMapInitialized] = useState(false);
+  const [mapStyle, setMapStyle] = useState('default');
+  const [layers, setLayers] = useState({
+    parcels: true,
+    buildings: true,
+    underground: true,
+    terrain: true,
+    labels: true
+  });
+  const [parcels, setParcels] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Initialize 3D map and fetch parcels data
+    const initMap = async () => {
+      try {
+        const response = await axios.get('http://localhost:8000/api/v1/parcels/');
+        setParcels(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError('Failed to load parcels data');
+        console.error(err);
+        setLoading(false);
+      }
+      setMapInitialized(true);
+    };
+
+    initMap();
+  }, []);
+
+  const toggleLayer = (layer) => {
+    setLayers(prev => ({
+      ...prev,
+      [layer]: !prev[layer]
+    }));
+  };
+
+  const changeMapStyle = (style) => {
+    setMapStyle(style);
+  };
+
+  if (!mapInitialized) {
+    return (
+      <div className="map-view-page">
+        <div className="map-view-header glass-panel">
+          <div className="header-content">
+            <h1>3D Property Intelligence Map</h1>
+            <p className="subtitle">Explore cadastral data in three dimensions</p>
+          </div>
+          <div className="header-actions">
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('satellite')}
+            >
+              Satellite
+            </button>
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('terrain')}
+            >
+              Terrain
+            </button>
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('default')}
+            >
+              Default
+            </button>
+          </div>
+        </div>
+        <div className="loading-container glass-panel">
+          <div className="loading-spinner"></div>
+          <h3>Loading 3D Map Intelligence...</h3>
+          <p>Initializing advanced spatial rendering engine</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="map-view-page">
+        <div className="map-view-header glass-panel">
+          <div className="header-content">
+            <h1>3D Property Intelligence Map</h1>
+            <p className="subtitle">Explore cadastral data in three dimensions</p>
+          </div>
+          <div className="header-actions">
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('satellite')}
+            >
+              Satellite
+            </button>
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('terrain')}
+            >
+              Terrain
+            </button>
+            <button
+              className="btn btn-outline"
+              onClick={() => changeMapStyle('default')}
+            >
+              Default
+            </button>
+          </div>
+        </div>
+        <div className="map-container">
+          <div className="map-wrapper">
+            <div id="map-3d" className={`map-3d ${mapStyle}`}>
+              <div className="map-error">
+                <h2>Error Loading Map Data</h2>
+                <p>{error}</p>
+                <button
+                  className="btn btn-outline"
+                  onClick={() => window.location.reload()}
+                >
+                  Retry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="map-view-page">
+      <div className="map-view-header glass-panel">
+        <div className="header-content">
+          <h1>3D Property Intelligence Map</h1>
+          <p className="subtitle">Explore cadastral data in three dimensions</p>
+        </div>
+        <div className="header-actions">
+          <button
+            className="btn btn-outline"
+            onClick={() => changeMapStyle('satellite')}
+          >
+            Satellite
+          </button>
+          <button
+            className="btn btn-outline"
+            onClick={() => changeMapStyle('terrain')}
+          >
+            Terrain
+          </button>
+          <button
+            className="btn btn-outline"
+            onClick={() => changeMapStyle('default')}
+          >
+            Default
+          </button>
+        </div>
+      </div>
+
+      {mapInitialized && (
+        <div className="map-container">
+          <div className="map-wrapper">
+            <div id="map-3d" className={`map-3d ${mapStyle}`}>
+              <Canvas
+                style={{ height: '100%', width: '100%' }}
+                camera={{ position: [0, 0, 5], fov: 75 }}
+              >
+                < Globe radius={3} parcels={parcels} />
+              </Canvas>
+            </div>
+          </div>
+        </div>
+
+        <div className="map-controls">
+          <div className="control-group">
+            <label htmlFor="map-style">Map Style:</label>
+            <select
+              id="map-style"
+              value={mapStyle}
+              onChange={(e) => changeMapStyle(e.target.value)}
+              className="glass-panel"
+            >
+              <option value="default">Default</option>
+              <option value="satellite">Satellite</option>
+              <option value="terrain">Terrain</option>
+              <option value="night">Night</option>
+            </select>
+          </div>
+
+          <div className="control-group">
+            <label>Layers:</label>
+            <div className="layer-toggles">
+              <label className="layer-label">
+                <input
+                  type="checkbox"
+                  checked={layers.parcels}
+                  onChange={() => toggleLayer('parcels')}
+                />
+                Parcels
+              </label>
+              <label className="layer-label">
+                <input
+                  type="checkbox"
+                  checked={layers.buildings}
+                  onChange={() => toggleLayer('buildings')}
+                />
+                Buildings
+              </label>
+              <label className="layer-label">
+                <input
+                  type="checkbox"
+                  checked={layers.underground}
+                  onChange={() => toggleLayer('underground')}
+                />
+                Underground
+              </label>
+              <label className="layer-label">
+                <input
+                  type="checkbox"
+                  checked={layers.terrain}
+                  onChange={() => toggleLayer('terrain')}
+                />
+                Terrain
+              </label>
+              <label className="layer-label">
+                <input
+                  type="checkbox"
+                  checked={layers.labels}
+                  onChange={() => toggleLayer('labels')}
+                />
+                Labels
+              </label>
+            </div>
+          </div>
+
+          <div className="control-actions">
+            <button className="btn btn-primary" onClick={() =>
+              alert('Measurement tool activated! Click two points to measure distance.')
+            }>
+              Measure Distance
+            </button>
+            <button className="btn btn-outline" onClick={() =>
+              alert('Slice tool activated! Click and drag to create a cross-section.')
+            }>
+              Slice Tool
+            </button>
+            <button className="btn btn-outline" onClick={() =>
+              alert('Export view as image or 3D model.')
+            }>
+              Export View
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default MapView;

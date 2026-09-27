@@ -1,0 +1,50 @@
+.main-workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #0f172a; /* dark navy/charcoal */
+  color: white;
+}
+
+.workspace-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.property-explorer {
+  width: 280px;
+  border-right: 1px solid #2a2a40;
+  background: #1e1e2f;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.workspace-center {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+.scene3d-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.property-inspector {
+  width: 350px;
+  border-left: 1px solid #2a2a40;
+  background: #1e1e2f;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Ensure the Scene3D canvas takes full space */
+.scene3d-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

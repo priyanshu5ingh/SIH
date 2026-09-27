@@ -1,0 +1,50 @@
+.top-bar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  background: linear-gradient(to right, #4cc9f0, #a8edea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.status-items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.status-item .label {
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.status-item .value {
+  font-weight: 600;
+}
+
+.status-online {
+  color: #4cc9f0;
+}

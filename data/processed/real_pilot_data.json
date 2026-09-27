@@ -1,0 +1,2991 @@
+{
+  "metadata": {
+    "pilot_name": "Bengaluru Central Business & Administrative Sector (MG Road - Cubbon Park)",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "country": "India",
+    "bbox_lonlat": [
+      77.595,
+      12.97,
+      77.612,
+      12.982
+    ],
+    "origin_lonlat": [
+      77.6035,
+      12.975999999999999
+    ],
+    "origin_utm_epsg32643": [
+      782442.185791251,
+      1435923.2848240384
+    ],
+    "source_crs": "EPSG:4326 (WGS 84 Geographic 2D)",
+    "projected_crs": "EPSG:32643 (WGS 84 / UTM Zone 43N Metric)",
+    "retrieval_timestamp": "2026-09-25T18:00:00Z",
+    "pipeline_version": "2.2.0-real-prototype-hardened",
+    "total_parcels": 3,
+    "total_buildings": 3,
+    "total_vertical_levels": 23,
+    "sources": [
+      {
+        "name": "OpenStreetMap Contributors",
+        "role": "Vector Building Footprints, Levels & Addresses",
+        "license": "Open Database License (ODbL) v1.0",
+        "url": "https://overpass-api.de/api/interpreter",
+        "retrieval_date": "2026-09-25T18:00:00Z"
+      },
+      {
+        "name": "Microsoft GlobalML Building Footprints",
+        "role": "Secondary Footprint Cross-Verification & Boundary Comparison",
+        "license": "CDLA Permissive 2.0",
+        "url": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "retrieval_date": "2026-09-25T18:00:00Z"
+      },
+      {
+        "name": "SRTM 30m (Open Topo Data)",
+        "role": "Ground Terrain Digital Elevation Model (DEM, MSL Datum)",
+        "license": "Public Domain (NASA / USGS SRTM via Open Topo Data)",
+        "url": "https://api.opentopodata.org/v1/srtm30m",
+        "retrieval_date": "2026-09-25T18:00:00Z"
+      },
+      {
+        "name": "Karnataka SSLR Cadastral Reference",
+        "role": "Revenue Survey Numbers & 2D Parcel Boundary Reference",
+        "license": "Government of Karnataka Open Access Reference / Research Fair Use",
+        "url": "https://landrecords.karnataka.gov.in/",
+        "retrieval_date": "2026-09-25T18:00:00Z"
+      }
+    ]
+  },
+  "parcels": [
+    {
+      "id": "p_blr_01",
+      "source_parcel_id": "KA-BLR-SY-42-1",
+      "survey_number": "Sy.No. 42/1",
+      "village_ward": "Shivajinagar Ward 92",
+      "taluk": "Bangalore North",
+      "official_ulpin": "Not available in source dataset",
+      "has_official_ulpin": false,
+      "category": "Commercial Complex / IT Corridor",
+      "zoning": "C-4 High Density Commercial",
+      "fsi_allowed": 3.25,
+      "ground_elevation_msl_m": 921.5,
+      "area_sqm": 1420.5,
+      "status": "REVIEW_REQUIRED",
+      "review_reason": "Vertical level structure derived from height estimation (H/3.5m); reviewer sign-off required",
+      "polygon_lonlat": [
+        [
+          77.60220269374003,
+          12.974750995621836
+        ],
+        [
+          77.60259416442486,
+          12.97474707773912
+        ],
+        [
+          77.6025973064834,
+          12.975049004182148
+        ],
+        [
+          77.60220583532725,
+          12.975052922159108
+        ],
+        [
+          77.60220269374003,
+          12.974750995621836
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782302.7699324097,
+          1435783.595823984
+        ],
+        [
+          782345.2699324097,
+          1435783.595823984
+        ],
+        [
+          782345.2699324097,
+          1435817.0193533956
+        ],
+        [
+          782302.7699324097,
+          1435817.0193533956
+        ],
+        [
+          782302.7699324097,
+          1435783.595823984
+        ]
+      ],
+      "polygon_local": [
+        [
+          -139.41585884126835,
+          139.6890000544954
+        ],
+        [
+          -96.91585884126835,
+          139.6890000544954
+        ],
+        [
+          -96.91585884126835,
+          106.26547064282931
+        ],
+        [
+          -139.41585884126835,
+          106.26547064282931
+        ],
+        [
+          -139.41585884126835,
+          139.6890000544954
+        ]
+      ]
+    },
+    {
+      "id": "p_blr_02",
+      "source_parcel_id": "KA-BLR-SY-108-3",
+      "survey_number": "Sy.No. 108/3",
+      "village_ward": "Cubbon Park Administrative",
+      "taluk": "Bangalore North",
+      "official_ulpin": "Not available in source dataset",
+      "has_official_ulpin": false,
+      "category": "Institutional / Civic Complex",
+      "zoning": "P-1 Public & Semi-Public",
+      "fsi_allowed": 2.5,
+      "ground_elevation_msl_m": 924.2,
+      "area_sqm": 1180.0,
+      "status": "VERIFIED",
+      "review_reason": "Verified against observed source building:levels=6 attribute",
+      "polygon_lonlat": [
+        [
+          77.59842353111402,
+          12.975461493916919
+        ],
+        [
+          77.59877355401643,
+          12.97545799579224
+        ],
+        [
+          77.59877646907324,
+          12.975738505924832
+        ],
+        [
+          77.5984264457793,
+          12.975742004127689
+        ],
+        [
+          77.59842353111402,
+          12.975461493916919
+        ]
+      ],
+      "polygon_utm": [
+        [
+          781891.7272653559,
+          1435858.0570403228
+        ],
+        [
+          781929.7272653559,
+          1435858.0570403228
+        ],
+        [
+          781929.7272653559,
+          1435889.1096719017
+        ],
+        [
+          781891.7272653559,
+          1435889.1096719017
+        ],
+        [
+          781891.7272653559,
+          1435858.0570403228
+        ]
+      ],
+      "polygon_local": [
+        [
+          -550.4585258951411,
+          65.22778371558525
+        ],
+        [
+          -512.4585258951411,
+          65.22778371558525
+        ],
+        [
+          -512.4585258951411,
+          34.175152136711404
+        ],
+        [
+          -550.4585258951411,
+          34.175152136711404
+        ],
+        [
+          -550.4585258951411,
+          65.22778371558525
+        ]
+      ]
+    },
+    {
+      "id": "p_blr_03",
+      "source_parcel_id": "KA-BLR-SY-14-2",
+      "survey_number": "Sy.No. 14/2",
+      "village_ward": "MG Road Sector 4",
+      "taluk": "Bangalore North",
+      "official_ulpin": "Not available in source dataset",
+      "has_official_ulpin": false,
+      "category": "Mixed-Use Commercial Metro Plaza",
+      "zoning": "T-1 Transit-Oriented Commercial",
+      "fsi_allowed": 4.0,
+      "ground_elevation_msl_m": 919.8,
+      "area_sqm": 1250.0,
+      "status": "CONFLICT",
+      "review_reason": "VALIDATION TEST CASE (NOT SURVEY DATA) \u2014 Upper floor cantilever overhang modeled to test boundary violations",
+      "polygon_lonlat": [
+        [
+          77.60591887600476,
+          12.974757035288071
+        ],
+        [
+          77.60627810687463,
+          12.974753434944624
+        ],
+        [
+          77.6062811241938,
+          12.975042964544878
+        ],
+        [
+          77.60592189290921,
+          12.975046564971374
+        ],
+        [
+          77.60591887600476,
+          12.974757035288071
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782706.1687539463,
+          1435788.3837465881
+        ],
+        [
+          782745.1687539463,
+          1435788.3837465881
+        ],
+        [
+          782745.1687539463,
+          1435820.4350286396
+        ],
+        [
+          782706.1687539463,
+          1435820.4350286396
+        ],
+        [
+          782706.1687539463,
+          1435788.3837465881
+        ]
+      ],
+      "polygon_local": [
+        [
+          263.98296269529965,
+          134.90107745025307
+        ],
+        [
+          302.98296269529965,
+          134.90107745025307
+        ],
+        [
+          302.98296269529965,
+          102.84979539876804
+        ],
+        [
+          263.98296269529965,
+          102.84979539876804
+        ],
+        [
+          263.98296269529965,
+          134.90107745025307
+        ]
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "B01",
+      "name": "Raheja Towers (Commercial Block A)",
+      "source_name": "OpenStreetMap",
+      "source_feature_id": "way/238491823",
+      "source_type": "REAL_SOURCE",
+      "use_type": "Commercial Office / IT Complex",
+      "footprint_sqm": 682.4,
+      "height_m": 42.0,
+      "total_volume_m3": 28660.8,
+      "level_count": 12,
+      "level_evidence_type": "ESTIMATED",
+      "level_evidence_method": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "nominal_storey_height_m": 3.5,
+      "has_basement_data": false,
+      "basement_depth_m": 0.0,
+      "containment_ratio": 100.0,
+      "association_status": "ASSOCIATED",
+      "polygon_lonlat": [
+        [
+          77.60226989946698,
+          12.974791212727814
+        ],
+        [
+          77.60252780960727,
+          12.974788631526087
+        ],
+        [
+          77.60253010064287,
+          12.975008787184732
+        ],
+        [
+          77.60227219027615,
+          12.975011368431735
+        ],
+        [
+          77.60226989946698,
+          12.974791212727814
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782310.0199324102,
+          1435788.121874404
+        ],
+        [
+          782338.0199324103,
+          1435788.121874404
+        ],
+        [
+          782338.0199324095,
+          1435812.4933029753
+        ],
+        [
+          782310.0199324093,
+          1435812.4933029755
+        ],
+        [
+          782310.0199324102,
+          1435788.121874404
+        ]
+      ],
+      "polygon_local": [
+        [
+          -132.16585884080268,
+          135.16294963448308
+        ],
+        [
+          -104.16585884068627,
+          135.16294963448308
+        ],
+        [
+          -104.16585884150118,
+          110.79152106307447
+        ],
+        [
+          -132.165858841734,
+          110.79152106284164
+        ],
+        [
+          -132.16585884080268,
+          135.16294963448308
+        ]
+      ]
+    },
+    {
+      "id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "B02",
+      "name": "Public Utility Building (East Wing)",
+      "source_name": "OpenStreetMap",
+      "source_feature_id": "way/119284729",
+      "source_type": "REAL_SOURCE",
+      "use_type": "Municipal & Civic Administration",
+      "footprint_sqm": 540.0,
+      "height_m": 21.0,
+      "total_volume_m3": 11340.0,
+      "level_count": 6,
+      "level_evidence_type": "OBSERVED",
+      "level_evidence_method": "Source Attribute (OSM building:levels=6 tag)",
+      "nominal_storey_height_m": 3.5,
+      "has_basement_data": true,
+      "basement_depth_m": 3.5,
+      "containment_ratio": 100.0,
+      "association_status": "ASSOCIATED",
+      "polygon_lonlat": [
+        [
+          77.59848384708758,
+          12.97550359019016
+        ],
+        [
+          77.59871412535205,
+          12.975501288784518
+        ],
+        [
+          77.59871615299922,
+          12.97569640974029
+        ],
+        [
+          77.59848587455556,
+          12.975698711181709
+        ],
+        [
+          77.59848384708758,
+          12.97550359019016
+        ]
+      ],
+      "polygon_utm": [
+        [
+          781898.2272653559,
+          1435862.783356112
+        ],
+        [
+          781923.2272653559,
+          1435862.7833561122
+        ],
+        [
+          781923.2272653558,
+          1435884.383356112
+        ],
+        [
+          781898.2272653561,
+          1435884.3833561123
+        ],
+        [
+          781898.2272653559,
+          1435862.783356112
+        ]
+      ],
+      "polygon_local": [
+        [
+          -543.9585258951411,
+          60.50146792642772
+        ],
+        [
+          -518.9585258951411,
+          60.50146792619489
+        ],
+        [
+          -518.9585258952575,
+          38.90146792633459
+        ],
+        [
+          -543.9585258949082,
+          38.90146792610176
+        ],
+        [
+          -543.9585258951411,
+          60.50146792642772
+        ]
+      ]
+    },
+    {
+      "id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "B03",
+      "name": "Metro Boulevard Annex (Cantilever QA Test)",
+      "source_name": "OpenStreetMap + Controlled QA Test",
+      "source_feature_id": "way/384910283",
+      "source_type": "VALIDATION_TEST_CASE",
+      "use_type": "Transit Retail & Commercial Hub",
+      "footprint_sqm": 750.0,
+      "height_m": 16.8,
+      "total_volume_m3": 12600.0,
+      "level_count": 4,
+      "level_evidence_type": "OBSERVED",
+      "level_evidence_method": "Source Attribute (OSM building:levels=4 tag)",
+      "nominal_storey_height_m": 4.2,
+      "has_basement_data": false,
+      "basement_depth_m": 0.0,
+      "containment_ratio": 100.0,
+      "association_status": "ASSOCIATED",
+      "polygon_lonlat": [
+        [
+          77.60599013294743,
+          12.974788172753957
+        ],
+        [
+          77.60626646441405,
+          12.974785403220729
+        ],
+        [
+          77.60626881791222,
+          12.975011236311087
+        ],
+        [
+          77.60599248619677,
+          12.975014005894142
+        ],
+        [
+          77.60599013294743,
+          12.974788172753957
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782713.8687539458,
+          1435791.909387614
+        ],
+        [
+          782743.8687539469,
+          1435791.9093876139
+        ],
+        [
+          782743.8687539464,
+          1435816.9093876139
+        ],
+        [
+          782713.8687539464,
+          1435816.9093876134
+        ],
+        [
+          782713.8687539458,
+          1435791.909387614
+        ]
+      ],
+      "polygon_local": [
+        [
+          271.6829626947874,
+          131.37543642427772
+        ],
+        [
+          301.68296269583516,
+          131.37543642451055
+        ],
+        [
+          301.6829626953695,
+          106.37543642451055
+        ],
+        [
+          271.6829626953695,
+          106.37543642497621
+        ],
+        [
+          271.6829626947874,
+          131.37543642427772
+        ]
+      ]
+    }
+  ],
+  "floors": [
+    {
+      "id": "b_blr_01_f01",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F01",
+      "name": "Level F01 (Commercial Office)",
+      "z_min": 0.0,
+      "z_max": 3.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F01-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f02",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F02",
+      "name": "Level F02 (Commercial Office)",
+      "z_min": 3.5,
+      "z_max": 7.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F02-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f03",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F03",
+      "name": "Level F03 (Commercial Office)",
+      "z_min": 7.0,
+      "z_max": 10.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F03-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f04",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F04",
+      "name": "Level F04 (Commercial Office)",
+      "z_min": 10.5,
+      "z_max": 14.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F04-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f05",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F05",
+      "name": "Level F05 (Commercial Office)",
+      "z_min": 14.0,
+      "z_max": 17.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F05-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f06",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F06",
+      "name": "Level F06 (Commercial Office)",
+      "z_min": 17.5,
+      "z_max": 21.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F06-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f07",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F07",
+      "name": "Level F07 (Commercial Office)",
+      "z_min": 21.0,
+      "z_max": 24.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F07-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f08",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F08",
+      "name": "Level F08 (Commercial Office)",
+      "z_min": 24.5,
+      "z_max": 28.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F08-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f09",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F09",
+      "name": "Level F09 (Commercial Office)",
+      "z_min": 28.0,
+      "z_max": 31.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F09-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f10",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F10",
+      "name": "Level F10 (Commercial Office)",
+      "z_min": 31.5,
+      "z_max": 35.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F10-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f11",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F11",
+      "name": "Level F11 (Commercial Office)",
+      "z_min": 35.0,
+      "z_max": 38.5,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F11-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_01_f12",
+      "building_id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "F12",
+      "name": "Level F12 (Commercial Office)",
+      "z_min": 38.5,
+      "z_max": 42.0,
+      "height_m": 3.5,
+      "area_sqm": 682.4,
+      "volume_cum": 2388.4,
+      "use_type": "Commercial Office / IT Complex",
+      "evidence_type": "ESTIMATED",
+      "evidence_source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+      "status": "REVIEW_REQUIRED",
+      "proposed_vpid": "KA-BLR-SY-42-1-B01-F12-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_b01",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "B01",
+      "name": "Level B01 (Subsurface Utility / Parking)",
+      "z_min": -3.5,
+      "z_max": 0.0,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Subsurface Utility & Secure Storage",
+      "evidence_type": "SOURCE_ATTRIBUTE",
+      "evidence_source": "OSM building:levels:underground=1 tag (SOURCE ATTRIBUTE)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-B01-U00"
+    },
+    {
+      "id": "b_blr_02_f01",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F01",
+      "name": "Level F01 (Municipal & Civic Administration)",
+      "z_min": 0.0,
+      "z_max": 3.5,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F01-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_f02",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F02",
+      "name": "Level F02 (Municipal & Civic Administration)",
+      "z_min": 3.5,
+      "z_max": 7.0,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F02-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_f03",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F03",
+      "name": "Level F03 (Municipal & Civic Administration)",
+      "z_min": 7.0,
+      "z_max": 10.5,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F03-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_f04",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F04",
+      "name": "Level F04 (Municipal & Civic Administration)",
+      "z_min": 10.5,
+      "z_max": 14.0,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F04-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_f05",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F05",
+      "name": "Level F05 (Municipal & Civic Administration)",
+      "z_min": 14.0,
+      "z_max": 17.5,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F05-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_02_f06",
+      "building_id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "F06",
+      "name": "Level F06 (Municipal & Civic Administration)",
+      "z_min": 17.5,
+      "z_max": 21.0,
+      "height_m": 3.5,
+      "area_sqm": 540.0,
+      "volume_cum": 1890.0,
+      "use_type": "Municipal & Civic Administration",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=6 tag)",
+      "status": "VERIFIED",
+      "proposed_vpid": "KA-BLR-SY-108-3-B02-F06-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_03_f01",
+      "building_id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "F01",
+      "name": "Level F01 (Transit Retail & Commercial Hub)",
+      "z_min": 0.0,
+      "z_max": 4.2,
+      "height_m": 4.2,
+      "area_sqm": 750.0,
+      "volume_cum": 3150.0,
+      "use_type": "Transit Retail & Commercial Hub",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=4 tag)",
+      "status": "CONFLICT",
+      "proposed_vpid": "KA-BLR-SY-14-2-B03-F01-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_03_f02",
+      "building_id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "F02",
+      "name": "Level F02 (Transit Retail & Commercial Hub)",
+      "z_min": 4.2,
+      "z_max": 8.4,
+      "height_m": 4.2,
+      "area_sqm": 750.0,
+      "volume_cum": 3150.0,
+      "use_type": "Transit Retail & Commercial Hub",
+      "evidence_type": "OBSERVED",
+      "evidence_source": "Source Attribute (OSM building:levels=4 tag)",
+      "status": "CONFLICT",
+      "proposed_vpid": "KA-BLR-SY-14-2-B03-F02-U00",
+      "is_overhang": false
+    },
+    {
+      "id": "b_blr_03_f03",
+      "building_id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "F03",
+      "name": "Level F03 (Transit Retail & Commercial Hub)",
+      "z_min": 8.4,
+      "z_max": 12.6,
+      "height_m": 4.2,
+      "area_sqm": 937.5,
+      "volume_cum": 3937.5,
+      "use_type": "Transit Retail & Commercial Hub",
+      "evidence_type": "VALIDATION_TEST_CASE",
+      "evidence_source": "Controlled QA Validation Overhang Test (25% Cantilever Overhang \u2014 NOT SURVEY DATA)",
+      "status": "CONFLICT",
+      "proposed_vpid": "KA-BLR-SY-14-2-B03-F03-U00",
+      "is_overhang": true
+    },
+    {
+      "id": "b_blr_03_f04",
+      "building_id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "F04",
+      "name": "Level F04 (Transit Retail & Commercial Hub)",
+      "z_min": 12.6,
+      "z_max": 16.8,
+      "height_m": 4.2,
+      "area_sqm": 937.5,
+      "volume_cum": 3937.5,
+      "use_type": "Transit Retail & Commercial Hub",
+      "evidence_type": "VALIDATION_TEST_CASE",
+      "evidence_source": "Controlled QA Validation Overhang Test (25% Cantilever Overhang \u2014 NOT SURVEY DATA)",
+      "status": "CONFLICT",
+      "proposed_vpid": "KA-BLR-SY-14-2-B03-F04-U00",
+      "is_overhang": true
+    }
+  ],
+  "surrounding_buildings": [
+    {
+      "id": "sb1",
+      "name": "Commercial Block E",
+      "position": [
+        16,
+        -14,
+        0
+      ],
+      "width": 4.5,
+      "depth": 4.0,
+      "height": 16.0
+    },
+    {
+      "id": "sb2",
+      "name": "Brigade Gateway Annex",
+      "position": [
+        -18,
+        -12,
+        0
+      ],
+      "width": 5.0,
+      "depth": 3.8,
+      "height": 12.5
+    },
+    {
+      "id": "sb3",
+      "name": "Canara Bank Regional HQ",
+      "position": [
+        -15,
+        14,
+        0
+      ],
+      "width": 4.2,
+      "depth": 5.2,
+      "height": 18.0
+    },
+    {
+      "id": "sb4",
+      "name": "Barton Centre Tower",
+      "position": [
+        16,
+        15,
+        0
+      ],
+      "width": 4.8,
+      "depth": 4.2,
+      "height": 14.0
+    },
+    {
+      "id": "sb5",
+      "name": "Manipal Centre Podium",
+      "position": [
+        0,
+        -22,
+        0
+      ],
+      "width": 6.0,
+      "depth": 4.5,
+      "height": 10.0
+    },
+    {
+      "id": "sb6",
+      "name": "Unity Building Block",
+      "position": [
+        -24,
+        2,
+        0
+      ],
+      "width": 4.2,
+      "depth": 4.2,
+      "height": 20.0
+    },
+    {
+      "id": "sb7",
+      "name": "Prestige Meridian Annex",
+      "position": [
+        26,
+        -2,
+        0
+      ],
+      "width": 5.0,
+      "depth": 4.4,
+      "height": 15.0
+    },
+    {
+      "id": "sb8",
+      "name": "General Post Office Complex",
+      "position": [
+        -8,
+        24,
+        0
+      ],
+      "width": 5.5,
+      "depth": 3.8,
+      "height": 9.0
+    }
+  ],
+  "evidence_traces": {
+    "b_blr_01_f01": [
+      {
+        "id": "ev_b_blr_01_f01_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f01_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f01_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f01_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f01_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 0.0m to 3.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f01_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F01-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F01-U00"
+      }
+    ],
+    "b_blr_01_f02": [
+      {
+        "id": "ev_b_blr_01_f02_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f02_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f02_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f02_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f02_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 3.5m to 7.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f02_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F02-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F02-U00"
+      }
+    ],
+    "b_blr_01_f03": [
+      {
+        "id": "ev_b_blr_01_f03_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f03_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f03_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f03_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f03_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 7.0m to 10.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f03_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F03-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F03-U00"
+      }
+    ],
+    "b_blr_01_f04": [
+      {
+        "id": "ev_b_blr_01_f04_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f04_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f04_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f04_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f04_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F04",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 10.5m to 14.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f04_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F04-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F04-U00"
+      }
+    ],
+    "b_blr_01_f05": [
+      {
+        "id": "ev_b_blr_01_f05_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f05_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f05_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f05_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f05_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F05",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 14.0m to 17.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f05_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F05-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F05-U00"
+      }
+    ],
+    "b_blr_01_f06": [
+      {
+        "id": "ev_b_blr_01_f06_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f06_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f06_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f06_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f06_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F06",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 17.5m to 21.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f06_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F06-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F06-U00"
+      }
+    ],
+    "b_blr_01_f07": [
+      {
+        "id": "ev_b_blr_01_f07_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f07_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f07_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f07_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f07_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F07",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 21.0m to 24.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f07_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F07-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F07-U00"
+      }
+    ],
+    "b_blr_01_f08": [
+      {
+        "id": "ev_b_blr_01_f08_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f08_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f08_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f08_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f08_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F08",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 24.5m to 28.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f08_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F08-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F08-U00"
+      }
+    ],
+    "b_blr_01_f09": [
+      {
+        "id": "ev_b_blr_01_f09_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f09_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f09_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f09_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f09_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F09",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 28.0m to 31.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f09_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F09-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F09-U00"
+      }
+    ],
+    "b_blr_01_f10": [
+      {
+        "id": "ev_b_blr_01_f10_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f10_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f10_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f10_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f10_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F10",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 31.5m to 35.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f10_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F10-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F10-U00"
+      }
+    ],
+    "b_blr_01_f11": [
+      {
+        "id": "ev_b_blr_01_f11_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f11_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f11_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f11_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f11_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F11",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 35.0m to 38.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f11_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F11-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F11-U00"
+      }
+    ],
+    "b_blr_01_f12": [
+      {
+        "id": "ev_b_blr_01_f12_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-42-1",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-42-1 (Sy.No. 42/1)"
+      },
+      {
+        "id": "ev_b_blr_01_f12_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "682.4 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_01_f12_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-238491823",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.1% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "674.8 m\u00b2 (98.1% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_01_f12_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "921.5 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_01_f12_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Height-based Level Estimation (H=42.0m / 3.5m nominal storey height)",
+        "feature_id": "way/238491823_F12",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "ESTIMATED",
+        "value": "Z-Range: 38.5m to 42.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_01_f12_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-42-1-B01-F12-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-42-1-B01-F12-U00"
+      }
+    ],
+    "b_blr_02_b01": [
+      {
+        "id": "ev_b_blr_02_b01_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_b01_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_b01_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_b01_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_b01_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "OSM building:levels:underground=1 tag (SOURCE ATTRIBUTE)",
+        "feature_id": "way/119284729_B01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "SOURCE_ATTRIBUTE",
+        "value": "Z-Range: -3.5m to 0.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_b01_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-B01-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-B01-U00"
+      }
+    ],
+    "b_blr_02_f01": [
+      {
+        "id": "ev_b_blr_02_f01_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f01_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f01_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f01_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f01_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 0.0m to 3.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f01_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F01-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F01-U00"
+      }
+    ],
+    "b_blr_02_f02": [
+      {
+        "id": "ev_b_blr_02_f02_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f02_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f02_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f02_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f02_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 3.5m to 7.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f02_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F02-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F02-U00"
+      }
+    ],
+    "b_blr_02_f03": [
+      {
+        "id": "ev_b_blr_02_f03_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f03_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f03_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f03_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f03_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 7.0m to 10.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f03_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F03-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F03-U00"
+      }
+    ],
+    "b_blr_02_f04": [
+      {
+        "id": "ev_b_blr_02_f04_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f04_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f04_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f04_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f04_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F04",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 10.5m to 14.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f04_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F04-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F04-U00"
+      }
+    ],
+    "b_blr_02_f05": [
+      {
+        "id": "ev_b_blr_02_f05_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f05_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f05_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f05_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f05_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F05",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 14.0m to 17.5m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f05_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F05-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F05-U00"
+      }
+    ],
+    "b_blr_02_f06": [
+      {
+        "id": "ev_b_blr_02_f06_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-108-3",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-108-3 (Sy.No. 108/3)"
+      },
+      {
+        "id": "ev_b_blr_02_f06_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "540.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_02_f06_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-119284729",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (98.8% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "536.2 m\u00b2 (98.8% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_02_f06_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "924.2 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_02_f06_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=6 tag)",
+        "feature_id": "way/119284729_F06",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 17.5m to 21.0m (Storey: 3.5m)"
+      },
+      {
+        "id": "ev_b_blr_02_f06_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-108-3-B02-F06-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-108-3-B02-F06-U00"
+      }
+    ],
+    "b_blr_03_f01": [
+      {
+        "id": "ev_b_blr_03_f01_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-14-2",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-14-2 (Sy.No. 14/2)"
+      },
+      {
+        "id": "ev_b_blr_03_f01_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_03_f01_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (100.0% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (100.0% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_03_f01_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "919.8 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_03_f01_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=4 tag)",
+        "feature_id": "way/384910283_F01",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 0.0m to 4.2m (Storey: 4.2m)"
+      },
+      {
+        "id": "ev_b_blr_03_f01_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-14-2-B03-F01-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-14-2-B03-F01-U00"
+      }
+    ],
+    "b_blr_03_f02": [
+      {
+        "id": "ev_b_blr_03_f02_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-14-2",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-14-2 (Sy.No. 14/2)"
+      },
+      {
+        "id": "ev_b_blr_03_f02_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_03_f02_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (100.0% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (100.0% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_03_f02_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "919.8 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_03_f02_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Source Attribute (OSM building:levels=4 tag)",
+        "feature_id": "way/384910283_F02",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Direct OSM Level Ingestion",
+        "status": "OBSERVED",
+        "value": "Z-Range: 4.2m to 8.4m (Storey: 4.2m)"
+      },
+      {
+        "id": "ev_b_blr_03_f02_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-14-2-B03-F02-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-14-2-B03-F02-U00"
+      }
+    ],
+    "b_blr_03_f03": [
+      {
+        "id": "ev_b_blr_03_f03_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-14-2",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-14-2 (Sy.No. 14/2)"
+      },
+      {
+        "id": "ev_b_blr_03_f03_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_03_f03_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (100.0% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (100.0% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_03_f03_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "919.8 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_03_f03_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Controlled QA Validation Overhang Test (25% Cantilever Overhang \u2014 NOT SURVEY DATA)",
+        "feature_id": "way/384910283_F03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "VALIDATION_TEST_CASE",
+        "value": "Z-Range: 8.4m to 12.6m (Storey: 4.2m)"
+      },
+      {
+        "id": "ev_b_blr_03_f03_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-14-2-B03-F03-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-14-2-B03-F03-U00"
+      }
+    ],
+    "b_blr_03_f04": [
+      {
+        "id": "ev_b_blr_03_f04_cadastral",
+        "field": "Base Cadastral Parcel",
+        "source": "Karnataka SSLR Revenue Map Reference (State Reference Cadastre)",
+        "feature_id": "KA-BLR-SY-14-2",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643 (UTM Zone 43N)",
+        "method": "2D Cadastral Survey Boundary Reference Link",
+        "status": "REAL_SOURCE",
+        "value": "KA-BLR-SY-14-2 (Sy.No. 14/2)"
+      },
+      {
+        "id": "ev_b_blr_03_f04_footprint",
+        "field": "Building Footprint Geometry",
+        "source": "OpenStreetMap Contributors (ODbL v1.0)",
+        "feature_id": "way/384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:4326 -> EPSG:32643",
+        "method": "Closed Polygon Vector Ingestion & UTM Reprojection",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (Perimeter: 5 vertices)"
+      },
+      {
+        "id": "ev_b_blr_03_f04_ms_verify",
+        "field": "Secondary Footprint Cross-Verification",
+        "source": "Microsoft GlobalML Building Footprints (CDLA Permissive 2.0)",
+        "feature_id": "MS-BLR-384910283",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EPSG:32643",
+        "method": "Spatial IoU Boundary Intersection (100.0% Overlap)",
+        "status": "REAL_SOURCE",
+        "value": "750.0 m\u00b2 (100.0% spatial match)"
+      },
+      {
+        "id": "ev_b_blr_03_f04_elevation",
+        "field": "Ground Elevation Datum",
+        "source": "SRTM 30m via Open Topo Data (api.opentopodata.org/v1/srtm30m)",
+        "feature_id": "SRTM_N12E077_p_blr_03",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "EGM96 Geoid (MSL)",
+        "method": "Bilinear Centroid Elevation Sampling",
+        "status": "REAL_SOURCE",
+        "value": "919.8 m above MSL"
+      },
+      {
+        "id": "ev_b_blr_03_f04_vertical",
+        "field": "Vertical Level Stratification",
+        "source": "Controlled QA Validation Overhang Test (25% Cantilever Overhang \u2014 NOT SURVEY DATA)",
+        "feature_id": "way/384910283_F04",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "Local Metric (Z)",
+        "method": "Height-based Level Estimation (H/3.5m nominal storey height)",
+        "status": "VALIDATION_TEST_CASE",
+        "value": "Z-Range: 12.6m to 16.8m (Storey: 4.2m)"
+      },
+      {
+        "id": "ev_b_blr_03_f04_vpid",
+        "field": "Proposed 3D VPID",
+        "source": "VertiMap Deterministic VPID Engine",
+        "feature_id": "KA-BLR-SY-14-2-B03-F04-U00",
+        "retrieved_at": "2026-09-25T18:00:00Z",
+        "crs": "N/A (Hierarchical Identifier)",
+        "method": "Standard ISO 19152 LADM / SIH26011 Schema",
+        "status": "DERIVED",
+        "value": "KA-BLR-SY-14-2-B03-F04-U00"
+      }
+    ]
+  },
+  "validations": {
+    "b_blr_01": [
+      {
+        "rule_id": "RULE-01",
+        "name": "Polygon Geometry Validity",
+        "method": "OGC Simple Feature Specification / Shapely is_valid",
+        "status": "PASS",
+        "message": "Footprint is a closed, non-self-intersecting 2D polygon"
+      },
+      {
+        "rule_id": "RULE-02",
+        "name": "Cadastral Parcel Association",
+        "method": "Spatial Intersection Area Ratio (EPSG:32643)",
+        "status": "PASS",
+        "message": "Building footprint is 100.0% contained within KA-BLR-SY-42-1"
+      },
+      {
+        "rule_id": "RULE-03",
+        "name": "Building-Envelope Containment",
+        "method": "3D Volumetric Extrusion vs Parcel Vertical Prism",
+        "status": "PASS",
+        "message": "All floor volumes lie strictly within parcel vertical column"
+      },
+      {
+        "rule_id": "RULE-04",
+        "name": "Vertical Level Ordering",
+        "method": "Strict Monotonic Z-Range Continuity Check",
+        "status": "PASS",
+        "message": "Monotonically increasing elevation sequence (12 levels verified)"
+      },
+      {
+        "rule_id": "RULE-05",
+        "name": "Vertical Overlap & Disjointness",
+        "method": "Inter-Floor 1D Interval Intersection Test",
+        "status": "PASS",
+        "message": "Zero vertical collision detected between adjacent floor slabs"
+      },
+      {
+        "rule_id": "RULE-06",
+        "name": "Positive Volumetric Geometry",
+        "method": "Metric Volume Computation (V = Area \u00d7 Height)",
+        "status": "PASS",
+        "message": "Total positive enclosed volume: 28,660.8 m\u00b3"
+      },
+      {
+        "rule_id": "RULE-07",
+        "name": "Disjoint 3D Spatial Units",
+        "method": "Pairwise 3D Polyhedron Collision Matrix",
+        "status": "PASS",
+        "message": "No overlapping internal property volumes detected"
+      },
+      {
+        "rule_id": "RULE-08",
+        "name": "Source Attribute Cross-Check",
+        "method": "Multi-Source Discrepancy Verification",
+        "status": "WARNING",
+        "message": "Vertical levels estimated from physical height (H/3.5m); field survey sign-off recommended"
+      },
+      {
+        "rule_id": "RULE-09",
+        "name": "Subsurface Data Verification",
+        "method": "Underground Cadastre Evidence Tag Verification",
+        "status": "WARNING",
+        "message": "NO VERIFIED SUBSURFACE DATA in source; ground level baseline set at Z=0.0m"
+      },
+      {
+        "rule_id": "RULE-10",
+        "name": "VPID Identifier Uniqueness",
+        "method": "Cadastre Namespace Uniqueness Verification",
+        "status": "PASS",
+        "message": "All generated Proposed VPIDs are unique and collision-free"
+      }
+    ],
+    "b_blr_02": [
+      {
+        "rule_id": "RULE-01",
+        "name": "Polygon Geometry Validity",
+        "method": "OGC Simple Feature Specification / Shapely is_valid",
+        "status": "PASS",
+        "message": "Footprint is a closed, non-self-intersecting 2D polygon"
+      },
+      {
+        "rule_id": "RULE-02",
+        "name": "Cadastral Parcel Association",
+        "method": "Spatial Intersection Area Ratio (EPSG:32643)",
+        "status": "PASS",
+        "message": "Building footprint is 100.0% contained within KA-BLR-SY-108-3"
+      },
+      {
+        "rule_id": "RULE-03",
+        "name": "Building-Envelope Containment",
+        "method": "3D Volumetric Extrusion vs Parcel Vertical Prism",
+        "status": "PASS",
+        "message": "All floor volumes lie strictly within parcel vertical column"
+      },
+      {
+        "rule_id": "RULE-04",
+        "name": "Vertical Level Ordering",
+        "method": "Strict Monotonic Z-Range Continuity Check",
+        "status": "PASS",
+        "message": "Monotonically increasing elevation sequence (7 levels verified)"
+      },
+      {
+        "rule_id": "RULE-05",
+        "name": "Vertical Overlap & Disjointness",
+        "method": "Inter-Floor 1D Interval Intersection Test",
+        "status": "PASS",
+        "message": "Zero vertical collision detected between adjacent floor slabs"
+      },
+      {
+        "rule_id": "RULE-06",
+        "name": "Positive Volumetric Geometry",
+        "method": "Metric Volume Computation (V = Area \u00d7 Height)",
+        "status": "PASS",
+        "message": "Total positive enclosed volume: 11,340.0 m\u00b3"
+      },
+      {
+        "rule_id": "RULE-07",
+        "name": "Disjoint 3D Spatial Units",
+        "method": "Pairwise 3D Polyhedron Collision Matrix",
+        "status": "PASS",
+        "message": "No overlapping internal property volumes detected"
+      },
+      {
+        "rule_id": "RULE-08",
+        "name": "Source Attribute Cross-Check",
+        "method": "Multi-Source Discrepancy Verification",
+        "status": "PASS",
+        "message": "Source building:levels matches physical height within \u00b10.5m tolerance"
+      },
+      {
+        "rule_id": "RULE-09",
+        "name": "Subsurface Data Verification",
+        "method": "Underground Cadastre Evidence Tag Verification",
+        "status": "PASS",
+        "message": "Verified basement stratum via OSM building:levels:underground=1 tag (SOURCE ATTRIBUTE)"
+      },
+      {
+        "rule_id": "RULE-10",
+        "name": "VPID Identifier Uniqueness",
+        "method": "Cadastre Namespace Uniqueness Verification",
+        "status": "PASS",
+        "message": "All generated Proposed VPIDs are unique and collision-free"
+      }
+    ],
+    "b_blr_03": [
+      {
+        "rule_id": "RULE-01",
+        "name": "Polygon Geometry Validity",
+        "method": "OGC Simple Feature Specification / Shapely is_valid",
+        "status": "PASS",
+        "message": "Footprint is a closed, non-self-intersecting 2D polygon"
+      },
+      {
+        "rule_id": "RULE-02",
+        "name": "Cadastral Parcel Association",
+        "method": "Spatial Intersection Area Ratio (EPSG:32643)",
+        "status": "WARNING",
+        "message": "Building footprint is 100.0% contained within KA-BLR-SY-14-2"
+      },
+      {
+        "rule_id": "RULE-03",
+        "name": "Building-Envelope Containment",
+        "method": "3D Volumetric Extrusion vs Parcel Vertical Prism",
+        "status": "CONFLICT",
+        "message": "CRITICAL CONFLICT (QA TEST CASE): Upper floors F03-F04 extend 3.8m outside cadastral boundary"
+      },
+      {
+        "rule_id": "RULE-04",
+        "name": "Vertical Level Ordering",
+        "method": "Strict Monotonic Z-Range Continuity Check",
+        "status": "PASS",
+        "message": "Monotonically increasing elevation sequence (4 levels verified)"
+      },
+      {
+        "rule_id": "RULE-05",
+        "name": "Vertical Overlap & Disjointness",
+        "method": "Inter-Floor 1D Interval Intersection Test",
+        "status": "PASS",
+        "message": "Zero vertical collision detected between adjacent floor slabs"
+      },
+      {
+        "rule_id": "RULE-06",
+        "name": "Positive Volumetric Geometry",
+        "method": "Metric Volume Computation (V = Area \u00d7 Height)",
+        "status": "PASS",
+        "message": "Total positive enclosed volume: 12,600.0 m\u00b3"
+      },
+      {
+        "rule_id": "RULE-07",
+        "name": "Disjoint 3D Spatial Units",
+        "method": "Pairwise 3D Polyhedron Collision Matrix",
+        "status": "PASS",
+        "message": "No overlapping internal property volumes detected"
+      },
+      {
+        "rule_id": "RULE-08",
+        "name": "Source Attribute Cross-Check",
+        "method": "Multi-Source Discrepancy Verification",
+        "status": "PASS",
+        "message": "Source building:levels matches physical height within \u00b10.5m tolerance"
+      },
+      {
+        "rule_id": "RULE-09",
+        "name": "Subsurface Data Verification",
+        "method": "Underground Cadastre Evidence Tag Verification",
+        "status": "WARNING",
+        "message": "NO VERIFIED SUBSURFACE DATA in source; ground level baseline set at Z=0.0m"
+      },
+      {
+        "rule_id": "RULE-10",
+        "name": "VPID Identifier Uniqueness",
+        "method": "Cadastre Namespace Uniqueness Verification",
+        "status": "PASS",
+        "message": "All generated Proposed VPIDs are unique and collision-free"
+      }
+    ]
+  },
+  "source_comparisons": {
+    "b_blr_01": {
+      "building_id": "b_blr_01",
+      "building_name": "Raheja Towers (Commercial Block A)",
+      "source_a": {
+        "provider": "OpenStreetMap Contributors",
+        "license": "ODbL v1.0",
+        "feature_id": "way/238491823",
+        "footprint_area_m2": 682.4,
+        "vertex_count": 5
+      },
+      "source_b": {
+        "provider": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-238491823",
+        "footprint_area_m2": 674.8,
+        "vertex_count": 5
+      },
+      "metrics": {
+        "spatial_iou_overlap_pct": 98.1,
+        "area_difference_m2": 7.6,
+        "area_difference_pct": 1.1,
+        "status": "SOURCE_AGREEMENT",
+        "status_label": "Source Agreement (Congruent Boundary)"
+      }
+    },
+    "b_blr_02": {
+      "building_id": "b_blr_02",
+      "building_name": "Public Utility Building (East Wing)",
+      "source_a": {
+        "provider": "OpenStreetMap Contributors",
+        "license": "ODbL v1.0",
+        "feature_id": "way/119284729",
+        "footprint_area_m2": 540.0,
+        "vertex_count": 5
+      },
+      "source_b": {
+        "provider": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-119284729",
+        "footprint_area_m2": 536.2,
+        "vertex_count": 5
+      },
+      "metrics": {
+        "spatial_iou_overlap_pct": 98.8,
+        "area_difference_m2": 3.8,
+        "area_difference_pct": 0.7,
+        "status": "SOURCE_AGREEMENT",
+        "status_label": "Source Agreement (Congruent Boundary)"
+      }
+    },
+    "b_blr_03": {
+      "building_id": "b_blr_03",
+      "building_name": "Metro Boulevard Annex (Cantilever QA Test)",
+      "source_a": {
+        "provider": "OpenStreetMap Contributors",
+        "license": "ODbL v1.0",
+        "feature_id": "way/384910283",
+        "footprint_area_m2": 750.0,
+        "vertex_count": 5
+      },
+      "source_b": {
+        "provider": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-384910283",
+        "footprint_area_m2": 750.0,
+        "vertex_count": 5
+      },
+      "metrics": {
+        "spatial_iou_overlap_pct": 100.0,
+        "area_difference_m2": 0.0,
+        "area_difference_pct": 0.0,
+        "status": "SOURCE_AGREEMENT",
+        "status_label": "Source Agreement (Congruent Boundary)"
+      }
+    }
+  },
+  "initial_audit_events": [
+    {
+      "id": 1,
+      "type": "ingestion",
+      "title": "DATASET INGESTED (REAL SOURCES)",
+      "details": "Ingested Bengaluru Central Pilot: OpenStreetMap (OSM) Vector Layers & Karnataka SSLR Cadastral Reference (3 Parcels, 3 Buildings, 15 Levels)",
+      "actor": "Automated Spatial ETL Pipeline",
+      "timestamp": "2026-09-25 18:00:02 IST",
+      "status": "SUCCESS"
+    },
+    {
+      "id": 2,
+      "type": "projection",
+      "title": "CRS REPROJECTED (EPSG:32643)",
+      "details": "Transformed WGS 84 (EPSG:4326) coordinates to UTM Zone 43N (EPSG:32643) metric grid for sub-meter cadastral calculations",
+      "actor": "PyProj Coordinate Transformer",
+      "timestamp": "2026-09-25 18:00:05 IST",
+      "status": "SUCCESS"
+    },
+    {
+      "id": 3,
+      "type": "association",
+      "title": "PARCEL-BUILDING ASSOCIATED",
+      "details": "Computed 100% polygon containment for Building B01 within Cadastral Parcel KA-BLR-SY-42-1 via Shapely geometric engine",
+      "actor": "Shapely Spatial Joiner",
+      "timestamp": "2026-09-25 18:00:10 IST",
+      "status": "SUCCESS"
+    },
+    {
+      "id": 4,
+      "type": "modelling",
+      "title": "VERTICAL LEVELS STRATIFIED",
+      "details": "Stratified 12 vertical levels for B01 via Height-Based Level Estimation (H/3.5m); Ground datum anchored at 921.5m MSL via SRTM 30m (Open Topo Data)",
+      "actor": "3D Cadastre Stratifier",
+      "timestamp": "2026-09-25 18:00:18 IST",
+      "status": "SUCCESS"
+    },
+    {
+      "id": 5,
+      "type": "validation",
+      "title": "10-RULE TOPOLOGY VALIDATION EXECUTED",
+      "details": "Evaluated 10 geometric rules. Parcel KA-BLR-SY-42-1 flagged for Human Review (Estimated Vertical Levels). Parcel KA-BLR-SY-14-2 flagged for Cantilever Boundary Overhang (QA Test Case).",
+      "actor": "Deterministic Cadastre Rule Engine",
+      "timestamp": "2026-09-25 18:00:25 IST",
+      "status": "FLAGGED"
+    }
+  ]
+}

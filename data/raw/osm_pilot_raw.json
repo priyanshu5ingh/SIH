@@ -1,0 +1,516 @@
+{
+  "pilot_bbox": {
+    "min_lon": 77.595,
+    "min_lat": 12.97,
+    "max_lon": 77.612,
+    "max_lat": 12.982,
+    "name": "Bengaluru Central Business & Administrative Sector (MG Road - Cubbon Park)",
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "raw_parcels": [
+    {
+      "id": "p_blr_01",
+      "source_parcel_id": "KA-BLR-SY-42-1",
+      "survey_number": "Sy.No. 42/1",
+      "village_ward": "Shivajinagar Ward 92",
+      "taluk": "Bangalore North",
+      "official_ulpin": null,
+      "category": "Commercial Complex / IT Corridor",
+      "zoning": "C-4 High Density Commercial",
+      "fsi_allowed": 3.25,
+      "elevation_msl_m": 921.5,
+      "polygon_lonlat": [
+        [
+          77.60220269374003,
+          12.974750995621836
+        ],
+        [
+          77.60259416442486,
+          12.97474707773912
+        ],
+        [
+          77.6025973064834,
+          12.975049004182148
+        ],
+        [
+          77.60220583532725,
+          12.975052922159108
+        ],
+        [
+          77.60220269374003,
+          12.974750995621836
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782302.7699324097,
+          1435783.595823984
+        ],
+        [
+          782345.2699324097,
+          1435783.595823984
+        ],
+        [
+          782345.2699324097,
+          1435817.0193533956
+        ],
+        [
+          782302.7699324097,
+          1435817.0193533956
+        ],
+        [
+          782302.7699324097,
+          1435783.595823984
+        ]
+      ],
+      "status": "REVIEW_REQUIRED",
+      "review_reason": "Vertical level structure derived from height estimation (H/3.5m); reviewer sign-off required"
+    },
+    {
+      "id": "p_blr_02",
+      "source_parcel_id": "KA-BLR-SY-108-3",
+      "survey_number": "Sy.No. 108/3",
+      "village_ward": "Cubbon Park Administrative",
+      "taluk": "Bangalore North",
+      "official_ulpin": null,
+      "category": "Institutional / Civic Complex",
+      "zoning": "P-1 Public & Semi-Public",
+      "fsi_allowed": 2.5,
+      "elevation_msl_m": 924.2,
+      "polygon_lonlat": [
+        [
+          77.59842353111402,
+          12.975461493916919
+        ],
+        [
+          77.59877355401643,
+          12.97545799579224
+        ],
+        [
+          77.59877646907324,
+          12.975738505924832
+        ],
+        [
+          77.5984264457793,
+          12.975742004127689
+        ],
+        [
+          77.59842353111402,
+          12.975461493916919
+        ]
+      ],
+      "polygon_utm": [
+        [
+          781891.7272653559,
+          1435858.0570403228
+        ],
+        [
+          781929.7272653559,
+          1435858.0570403228
+        ],
+        [
+          781929.7272653559,
+          1435889.1096719017
+        ],
+        [
+          781891.7272653559,
+          1435889.1096719017
+        ],
+        [
+          781891.7272653559,
+          1435858.0570403228
+        ]
+      ],
+      "status": "VERIFIED",
+      "review_reason": "Verified against observed source building:levels=6 attribute"
+    },
+    {
+      "id": "p_blr_03",
+      "source_parcel_id": "KA-BLR-SY-14-2",
+      "survey_number": "Sy.No. 14/2",
+      "village_ward": "MG Road Sector 4",
+      "taluk": "Bangalore North",
+      "official_ulpin": null,
+      "category": "Mixed-Use Commercial Metro Plaza",
+      "zoning": "T-1 Transit-Oriented Commercial",
+      "fsi_allowed": 4.0,
+      "elevation_msl_m": 919.8,
+      "polygon_lonlat": [
+        [
+          77.60591887600476,
+          12.974757035288071
+        ],
+        [
+          77.60627810687463,
+          12.974753434944624
+        ],
+        [
+          77.6062811241938,
+          12.975042964544878
+        ],
+        [
+          77.60592189290921,
+          12.975046564971374
+        ],
+        [
+          77.60591887600476,
+          12.974757035288071
+        ]
+      ],
+      "polygon_utm": [
+        [
+          782706.1687539463,
+          1435788.3837465881
+        ],
+        [
+          782745.1687539463,
+          1435788.3837465881
+        ],
+        [
+          782745.1687539463,
+          1435820.4350286396
+        ],
+        [
+          782706.1687539463,
+          1435820.4350286396
+        ],
+        [
+          782706.1687539463,
+          1435788.3837465881
+        ]
+      ],
+      "status": "CONFLICT",
+      "review_reason": "VALIDATION TEST CASE (NOT SURVEY DATA) \u2014 Upper floor cantilever overhang modeled to test boundary violations"
+    }
+  ],
+  "raw_buildings": [
+    {
+      "id": "b_blr_01",
+      "parcel_id": "p_blr_01",
+      "code": "B01",
+      "name": "Raheja Towers (Commercial Block A)",
+      "source_name": "OpenStreetMap",
+      "source_feature_id": "way/238491823",
+      "source_type": "REAL_SOURCE",
+      "levels_tag": null,
+      "height_tag_m": 42.0,
+      "height_evidence_type": "ESTIMATED",
+      "nominal_storey_height_m": 3.5,
+      "use_type": "Commercial Office / IT Complex",
+      "has_basement_data": false,
+      "footprint_lonlat": [
+        [
+          77.60226989946698,
+          12.974791212727814
+        ],
+        [
+          77.60252780960727,
+          12.974788631526087
+        ],
+        [
+          77.60253010064287,
+          12.975008787184732
+        ],
+        [
+          77.60227219027615,
+          12.975011368431735
+        ],
+        [
+          77.60226989946698,
+          12.974791212727814
+        ]
+      ],
+      "footprint_utm": [
+        [
+          782310.0199324097,
+          1435788.121874404
+        ],
+        [
+          782338.0199324097,
+          1435788.121874404
+        ],
+        [
+          782338.0199324097,
+          1435812.4933029755
+        ],
+        [
+          782310.0199324097,
+          1435812.4933029755
+        ],
+        [
+          782310.0199324097,
+          1435788.121874404
+        ]
+      ],
+      "ms_footprint": {
+        "source": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-238491823",
+        "footprint_lonlat": [
+          [
+            77.60227229907416,
+            12.974792528371855
+          ],
+          [
+            77.6025281827787,
+            12.97478996744938
+          ],
+          [
+            77.60253046624064,
+            12.975009395274267
+          ],
+          [
+            77.6022745823122,
+            12.975011956241515
+          ],
+          [
+            77.60227229907416,
+            12.974792528371855
+          ]
+        ],
+        "footprint_utm": [
+          [
+            782310.2789324097,
+            1435788.270160324
+          ],
+          [
+            782338.0589324097,
+            1435788.270160324
+          ],
+          [
+            782338.0589324097,
+            1435812.5610170555
+          ],
+          [
+            782310.2789324097,
+            1435812.5610170555
+          ],
+          [
+            782310.2789324097,
+            1435788.270160324
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_blr_02",
+      "parcel_id": "p_blr_02",
+      "code": "B02",
+      "name": "Public Utility Building (East Wing)",
+      "source_name": "OpenStreetMap",
+      "source_feature_id": "way/119284729",
+      "source_type": "REAL_SOURCE",
+      "levels_tag": 6,
+      "height_tag_m": 21.0,
+      "height_evidence_type": "OBSERVED",
+      "nominal_storey_height_m": 3.5,
+      "use_type": "Municipal & Civic Administration",
+      "has_basement_data": true,
+      "basement_depth_m": 3.5,
+      "basement_evidence_source": "OSM building:levels:underground=1 tag (SOURCE ATTRIBUTE)",
+      "footprint_lonlat": [
+        [
+          77.59848384708758,
+          12.97550359019016
+        ],
+        [
+          77.59871412535205,
+          12.975501288784518
+        ],
+        [
+          77.59871615299922,
+          12.97569640974029
+        ],
+        [
+          77.59848587455556,
+          12.975698711181709
+        ],
+        [
+          77.59848384708758,
+          12.97550359019016
+        ]
+      ],
+      "footprint_utm": [
+        [
+          781898.2272653559,
+          1435862.7833561122
+        ],
+        [
+          781923.2272653559,
+          1435862.7833561122
+        ],
+        [
+          781923.2272653559,
+          1435884.3833561123
+        ],
+        [
+          781898.2272653559,
+          1435884.3833561123
+        ],
+        [
+          781898.2272653559,
+          1435862.7833561122
+        ]
+      ],
+      "ms_footprint": {
+        "source": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-119284729",
+        "footprint_lonlat": [
+          [
+            77.59848505325758,
+            12.975504417710916
+          ],
+          [
+            77.5987144104096,
+            12.975502125510092
+          ],
+          [
+            77.59871643187431,
+            12.975696651496369
+          ],
+          [
+            77.59848707454434,
+            12.975698943732713
+          ],
+          [
+            77.59848505325758,
+            12.975504417710916
+          ]
+        ],
+        "footprint_utm": [
+          [
+            781898.3572653559,
+            1435862.8762878391
+          ],
+          [
+            781923.2572653558,
+            1435862.8762878391
+          ],
+          [
+            781923.2572653558,
+            1435884.4104243855
+          ],
+          [
+            781898.3572653559,
+            1435884.4104243855
+          ],
+          [
+            781898.3572653559,
+            1435862.8762878391
+          ]
+        ]
+      }
+    },
+    {
+      "id": "b_blr_03",
+      "parcel_id": "p_blr_03",
+      "code": "B03",
+      "name": "Metro Boulevard Annex (Cantilever QA Test)",
+      "source_name": "OpenStreetMap + Controlled QA Test",
+      "source_feature_id": "way/384910283",
+      "source_type": "VALIDATION_TEST_CASE",
+      "levels_tag": 4,
+      "height_tag_m": 16.8,
+      "height_evidence_type": "OBSERVED",
+      "nominal_storey_height_m": 4.2,
+      "use_type": "Transit Retail & Commercial Hub",
+      "has_basement_data": false,
+      "footprint_lonlat": [
+        [
+          77.60599013294743,
+          12.974788172753957
+        ],
+        [
+          77.60626646441405,
+          12.974785403220729
+        ],
+        [
+          77.60626881791222,
+          12.975011236311087
+        ],
+        [
+          77.60599248619677,
+          12.975014005894142
+        ],
+        [
+          77.60599013294743,
+          12.974788172753957
+        ]
+      ],
+      "footprint_utm": [
+        [
+          782713.8687539463,
+          1435791.9093876139
+        ],
+        [
+          782743.8687539463,
+          1435791.9093876139
+        ],
+        [
+          782743.8687539463,
+          1435816.9093876139
+        ],
+        [
+          782713.8687539463,
+          1435816.9093876139
+        ],
+        [
+          782713.8687539463,
+          1435791.9093876139
+        ]
+      ],
+      "ms_footprint": {
+        "source": "Microsoft GlobalML Building Footprints",
+        "license": "CDLA Permissive 2.0",
+        "feature_id": "MS-BLR-384910283",
+        "footprint_lonlat": [
+          [
+            77.60599013294743,
+            12.974788172753957
+          ],
+          [
+            77.60626646441405,
+            12.974785403220729
+          ],
+          [
+            77.60626881791222,
+            12.975011236311087
+          ],
+          [
+            77.60599248619677,
+            12.975014005894142
+          ],
+          [
+            77.60599013294743,
+            12.974788172753957
+          ]
+        ],
+        "footprint_utm": [
+          [
+            782713.8687539463,
+            1435791.9093876139
+          ],
+          [
+            782743.8687539463,
+            1435791.9093876139
+          ],
+          [
+            782743.8687539463,
+            1435816.9093876139
+          ],
+          [
+            782713.8687539463,
+            1435816.9093876139
+          ],
+          [
+            782713.8687539463,
+            1435791.9093876139
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+.map-view-page {
+  padding: 0;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    #f8f9fa 0%,
+    #ffffff 100%
+  );
+}
+
+/* Map View Header */
+.map-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.map-view-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(106, 17, 203, 0.3),
+    transparent
+  );
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    #6a11cb 0%,
+    #2575fc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-content .subtitle {
+  margin: 0;
+  color: #5f6368;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Map Container */
+.map-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-3d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Map Styles */
+.map-3d.default {
+  background: linear-gradient(
+    135deg,
+    #0f0c29 0%,
+    #302b63 50%,
+    #24243e 100%
+  );
+}
+
+.map-3d.satellite {
+  background: linear-gradient(
+    135deg,
+    #2c3e50 0%,
+    #4a5568 100%
+  );
+}
+
+.map-3d.terrain {
+  background: linear-gradient(
+    135deg,
+    #2e4057 0%,
+    #4a5568 100%
+  );
+}
+
+.map-3d.night {
+  background: linear-gradient(
+    135deg,
+    #0c0c0c 0%,
+    #1a1a2e 100%
+  );
+}
+
+/* Placeholder */
+.map-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 500px;
+  width: 90%;
+}
+
+.placeholder-icon {
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-icon svg {
+  width: 64px;
+  height: 64px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.map-placeholder h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  background: linear-gradient(
+    135deg,
+    #6a11cb 0%,
+    #2575fc 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.placeholder-subtitle {
+  margin-bottom: 1.5rem;
+  color: #5f6368;
+  font-size: 1.1rem;
+}
+
+.feature-list {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: #2c3e50;
+}
+
+.feature-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #6a11cb;
+  font-weight: bold;
+}
+
+.placeholder-note {
+  background: rgba(106, 17, 203, 0.05);
+  border: 1px solid rgba(106, 17, 203, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.placeholder-note p {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.animation-hint {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(37, 117, 252, 0.1);
+  border: 1px solid rgba(37, 117, 252, 0.2);
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: #2575fc;
+  font-weight: 500;
+}
+
+/* Map Controls */
+.map-controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 90%;
+  max-width: 400px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.control-group select,
+.control-group input {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.control-group select:focus,
+.control-group input:focus {
+  outline: none;
+  border-color: rgba(106, 17, 203, 0.5);
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.2);
+}
+
+.layer-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.layer-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.layer-label input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.layer-label:hover {
+  opacity: 0.8;
+}
+
+.control-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.control-actions .btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(248, 249, 250, 0.8);
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(106, 17, 203, 0.2);
+  border-top-color: #6a11cb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-view-header {
+    padding: 1rem;
+  }
+
+  .header-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .header-content .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .map-controls {
+    bottom: 1rem;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .control-actions .btn {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map-controls {
+    width: 80%;
+    max-width: 500px;
+  }
+}
